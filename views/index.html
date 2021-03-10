@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand col-4" href="/">Notes</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav col-12">
+                  <a class="nav-link col-6" href="/note">Add note</a>
+                  <a class="nav-link col-6" href="/categorie">Add categorie</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-6">
+                    <h4>Categories</h4>
+                    <nav class="nav flex-column" id="categories">
+                      <div>
+                        <button class="btn col-6 hasnt">No categorie</button>
+                      </div>
+                    </nav>
+                </div>
+                <div class="col-6" id="noteBox">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/categories.js"></script>
+    <script defer src="js/notes.js"></script>
+</body>
+</html>
